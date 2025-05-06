@@ -1,14 +1,16 @@
-package pucgo.poobd.aula06052025;
+package pucgo.poobd.aula06052025.controller;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.event.ActionEvent;
 
 public class TelaPedidoController {
-    @FXML
-    private Label welcomeText;
 
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    public void botaoInserirOA(ActionEvent actionEvent) {
+    }
+
+    public void botaoEnviarPedidoOA(ActionEvent actionEvent) {
+    }
+
+    public void botaoVoltarOA(ActionEvent actionEvent) {
+
     }
 }

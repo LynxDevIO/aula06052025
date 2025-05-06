@@ -1,4 +1,4 @@
-package pucgo.poobd.aula06052025;
+package pucgo.poobd.aula06052025.view;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -8,12 +8,23 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class TelaGeralView extends Application {
+    private static Stage stage;
+
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("tela-principal.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/pucgo/poobd/aula06052025/tela-principal.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-        stage.setTitle("RESTAURANTE VIRTUAL!");
+        stage.setTitle("VIRTORANTE");
         stage.setScene(scene);
+        setStage(stage);
         stage.show();
+    }
+
+    public static Stage getStage() {
+        return stage;
+    }
+
+    public static void setStage(Stage stage) {
+        TelaGeralView.stage = stage;
     }
 }

@@ -5,17 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a958771b-5b65-485b-812c-9fa8e3e21bf3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaGeralController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaGeralController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaPedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaPedidoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/database/ConexaoBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/database/ConexaoBanco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/model/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/model/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/TelaGeralView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/TelaGeralView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/TelaPedidoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/TelaPedidoView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/tela-pedido.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/tela-pedido.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/tela-principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/tela-principal.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "LynxDevIO"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/LynxDevIO/aula06052025.git",
+    "accountId": "3086c251-764f-4269-9d08-ce29cf5bb18f"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -34,10 +67,29 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Run.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/JavaFX Scene Builder 2.0.exe"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pucgo.poobd.aula06052025.view" />
+      <recent name="pucgo.poobd.aula06052025" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Run" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="pucgo.poobd.aula06052025.Main" />
+      <module name="aula06052025" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
