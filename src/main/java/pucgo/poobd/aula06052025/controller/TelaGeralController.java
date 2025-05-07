@@ -24,11 +24,16 @@ public class TelaGeralController {
 
     @FXML
     private void botaoVerPedidosOA() {
-
+        // abrir tela de visualização dos pedidos
     }
 
     @FXML
     private void botaoSairOA() {
         Platform.exit();
+    }
+
+    @FXML
+    private void botaoCadastrarProdutoOA() {
+        // abrir tela de cadastro dos produtos
     }
 }

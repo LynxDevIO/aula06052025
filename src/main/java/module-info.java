@@ -2,6 +2,7 @@ module pucgo.poobd.aula06052025 {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.desktop;
+    requires java.sql;
 
 
     opens pucgo.poobd.aula06052025 to javafx.fxml;
@@ -10,4 +11,6 @@ module pucgo.poobd.aula06052025 {
     opens pucgo.poobd.aula06052025.view to javafx.fxml;
     exports pucgo.poobd.aula06052025.controller;
     opens pucgo.poobd.aula06052025.controller to javafx.fxml;
+    exports pucgo.poobd.aula06052025.dao;
+    exports pucgo.poobd.aula06052025.model;
 }

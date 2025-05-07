@@ -4,25 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Produto {
-    private List<Produto> produtos = new ArrayList<>();
     private int id;
     private String nome;
     private float valor;
 
     public Produto() {
-        this.produtos.add(this);
     }
 
     public Produto(int id, String nome, float valor) {
         this.id = id;
         this.nome = nome;
         this.valor = valor;
-
-        this.produtos.add(this);
-    }
-
-    public List<Produto> getProdutos() {
-        return produtos;
     }
 
     public int getId() {
@@ -47,5 +39,10 @@ public class Produto {
 
     public void setValor(float valor) {
         this.valor = valor;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + id + " | Nome: " + nome + " | Valor: R$" + valor;
     }
 }

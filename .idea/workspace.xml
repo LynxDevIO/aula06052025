@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a958771b-5b65-485b-812c-9fa8e3e21bf3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/IItemPedidoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/IPedidoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/IProdutoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/ItemPedidoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/PedidoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/ProdutoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/database/InicializadorBanco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/model/ItemPedido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/util/Alerta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaGeralController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaGeralController.java" afterDir="false" />
@@ -16,8 +25,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/database/ConexaoBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/database/ConexaoBanco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/model/Pedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/model/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/TelaGeralView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/TelaGeralView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/TelaPedidoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/TelaPedidoView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/tela-pedido.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/tela-pedido.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/tela-principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/tela-principal.fxml" afterDir="false" />
     </list>
@@ -30,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -37,16 +45,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "LynxDevIO"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LynxDevIO&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/LynxDevIO/aula06052025.git",
-    "accountId": "3086c251-764f-4269-9d08-ce29cf5bb18f"
+    "url": "https://github.com/LynxDevIO/aula06052025",
+    "accountId": "af99bdae-fb7b-4f51-90fe-aaf7a95810e5"
   }
 }]]></component>
   <component name="MavenImportPreferences">
@@ -56,11 +64,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2wjvuP5HrVDDoDSYX7hiOugDIIA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,10 +76,20 @@
   "keyToString": {
     "Application.Run.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/JavaFX Scene Builder 2.0.exe"
+    "last_opened_file_path": "C:/Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/JavaFX Scene Builder 2.0.exe",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -90,6 +107,14 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -98,7 +123,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746568021668</updated>
+      <workItem from="1746584924563" duration="15940000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
