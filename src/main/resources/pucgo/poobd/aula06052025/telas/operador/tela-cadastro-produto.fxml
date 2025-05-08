@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="470.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pucgo.poobd.aula06052025.controller.TelaCadastroProdutoController">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <Label text="RESTAURANTE VIRTUAL">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label text="Cadastro de Produto" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" spacing="20.0">
+         <children>
+            <TextField fx:id="nome" prefHeight="25.0" prefWidth="260.0" promptText="Nome do Produto" />
+            <TextField fx:id="preco" prefHeight="25.0" prefWidth="117.0" promptText="Preço (R$)" />
+            <TextField fx:id="estoque" prefHeight="25.0" prefWidth="120.0" promptText="Estoque (UN)" />
+         </children>
+      </HBox>
+      <CheckBox fx:id="confirmacao" mnemonicParsing="false" text="Confirmar" />
+      <Button fx:id="botaoCadastrar" mnemonicParsing="false" onAction="#botaoCadastrarOA" text="Cadastrar" />
+      <HBox>
+         <children>
+            <Button mnemonicParsing="false" onAction="#botaoVoltarOA" text="Voltar" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

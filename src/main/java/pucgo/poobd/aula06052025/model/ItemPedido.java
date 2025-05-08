@@ -49,6 +49,6 @@ public class ItemPedido {
 
     @Override
     public String toString() {
-        return quantidade + "x " + produto.getNome() + " = %.2f".formatted(quantidade * produto.getValor());
+        return quantidade + "x " + produto.getNome() + " = R$ %.2f".formatted(quantidade * produto.getValor());
     }
 }

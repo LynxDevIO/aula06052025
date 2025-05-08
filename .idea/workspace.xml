@@ -4,29 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a958771b-5b65-485b-812c-9fa8e3e21bf3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/IItemPedidoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/IPedidoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/IProdutoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/ItemPedidoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/PedidoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/ProdutoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/database/InicializadorBanco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/model/ItemPedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/util/Alerta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a958771b-5b65-485b-812c-9fa8e3e21bf3" name="Changes" comment="- design de novas telas&#10;- implementação de novas funcionalidades&#10;&#10;obs: um problema a ser considerado é o registro de vários pedidos que solicitam uma quantidade que ultrapassa o estoque; seria ótimo incluir uma checagem de estoque, ou seja, ao invés de a quantidade em estoque for baixada quando o pedido é baixado, ela é ajustada já na criação do pedido.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaCadastroProdutoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaPrincipalClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaPrincipalOperadorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaSelecaoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaVerPedidosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/PopupItensPedidoView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/TelaCadastroProdutoView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/TelaPrincipalClienteView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/TelaPrincipalOperadorView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/TelaSelecaoView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/telas/cliente/tela-principal-cliente.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/telas/operador/tela-cadastro-operador.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/telas/operador/tela-cadastro-produto.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/telas/operador/tela-principal-operador.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/telas/operador/tela-ver-pedidos.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/telas/tela-selecao.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaGeralController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaGeralController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaGeralController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaPedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaPedidoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/database/ConexaoBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/database/ConexaoBanco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/IItemPedidoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/IItemPedidoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/IPedidoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/IPedidoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/IProdutoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/IProdutoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/ItemPedidoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/ItemPedidoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/PedidoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/PedidoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/ProdutoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/ProdutoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/database/InicializadorBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/database/InicializadorBanco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/model/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/model/ItemPedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/model/Pedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/model/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/tela-pedido.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/tela-pedido.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/tela-principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/tela-principal.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/TelaGeralView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/TelaVerPedidosView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/TelaPedidoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/view/TelaPedidoView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/tela-pedido.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/telas/cliente/tela-pedido.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pucgo/poobd/aula06052025/tela-principal.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +49,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Interface" />
+        <option value="HTML File" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -51,12 +65,12 @@
     &quot;assignee&quot;: &quot;LynxDevIO&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/LynxDevIO/aula06052025",
-    "accountId": "af99bdae-fb7b-4f51-90fe-aaf7a95810e5"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LynxDevIO/aula06052025&quot;,
+    &quot;accountId&quot;: &quot;af99bdae-fb7b-4f51-90fe-aaf7a95810e5&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -72,30 +86,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Run.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/JavaFX Scene Builder 2.0.exe",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Run.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Philipe/IdeaProjects/aula06052025/src/main/resources/pucgo/poobd/aula06052025/telas/operador&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pucgo.poobd.aula06052025.view" />
       <recent name="pucgo.poobd.aula06052025" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Philipe\IdeaProjects\aula06052025\src\main\resources\pucgo\poobd\aula06052025\telas\operador" />
+      <recent name="C:\Users\Philipe\IdeaProjects\aula06052025" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Philipe\IdeaProjects\aula06052025\src\main\resources\pucgo\poobd\aula06052025\telas\operador" />
+      <recent name="C:\Users\Philipe\IdeaProjects\aula06052025\src\main\resources\pucgo\poobd\aula06052025\telas\cliente" />
+      <recent name="C:\Users\Philipe\IdeaProjects\aula06052025\src\main\resources\pucgo\poobd\aula06052025\telas" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pucgo.poobd.aula06052025.view" />
     </key>
   </component>
   <component name="RunManager">
@@ -110,8 +137,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.109" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.109" />
       </set>
     </attachedChunks>
   </component>
@@ -123,11 +150,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746568021668</updated>
-      <workItem from="1746584924563" duration="15940000" />
+      <workItem from="1746584924563" duration="16322000" />
+      <workItem from="1746629695322" duration="7159000" />
+      <workItem from="1746641918490" duration="1305000" />
+      <workItem from="1746643266524" duration="14236000" />
+      <workItem from="1746661523477" duration="2477000" />
+      <workItem from="1746664033427" duration="2697000" />
     </task>
+    <task id="LOCAL-00001" summary="- inclusão e configuração da persistência dos dados com sqlite&#10;- implementação da lógica restante do controlador de TelaPedidoController.java&#10;- outras adaptações necessárias para atender à implementação">
+      <option name="closed" value="true" />
+      <created>1746601530662</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746601530662</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- inclusão e configuração da persistência dos dados com sqlite&#10;- implementação da lógica restante do controlador de TelaPedidoController.java&#10;- outras adaptações necessárias para atender à implementação" />
+    <MESSAGE value="- design de novas telas&#10;- implementação de novas funcionalidades&#10;&#10;obs: um problema a ser considerado é o registro de vários pedidos que solicitam uma quantidade que ultrapassa o estoque; seria ótimo incluir uma checagem de estoque, ou seja, ao invés de a quantidade em estoque for baixada quando o pedido é baixado, ela é ajustada já na criação do pedido." />
+    <option name="LAST_COMMIT_MESSAGE" value="- design de novas telas&#10;- implementação de novas funcionalidades&#10;&#10;obs: um problema a ser considerado é o registro de vários pedidos que solicitam uma quantidade que ultrapassa o estoque; seria ótimo incluir uma checagem de estoque, ou seja, ao invés de a quantidade em estoque for baixada quando o pedido é baixado, ela é ajustada já na criação do pedido." />
   </component>
 </project>

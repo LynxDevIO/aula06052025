@@ -46,7 +46,7 @@ public class InicializadorBanco {
         return produtoDAO;
     }
 
-    public static IItemPedidoDAO getPedidoItemDAO() {
+    public static IItemPedidoDAO getItemPedidoDAO() {
         return pedidoItemDAO;
     }
 }

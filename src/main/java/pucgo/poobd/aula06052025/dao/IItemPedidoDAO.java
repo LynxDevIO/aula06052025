@@ -12,4 +12,5 @@ public interface IItemPedidoDAO {
     void excluirPorID(int id);
     Optional<ItemPedido> buscarPorID(int id);
     List<ItemPedido> buscarTodos();
+    List<ItemPedido> buscarPorIDPedido(int idPedido);
 }

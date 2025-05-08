@@ -9,6 +9,7 @@ public interface IProdutoDAO {
     void criarTabela();
     void inserir(Produto produto);
     void alterarPorID(int id, Produto produto);
+    void alterarEstoquePorID(int id, int estoqueNovo);
     void excluirPorID(int id);
     Optional<Produto> buscarPorID(int id);
     List<Produto> buscarTodos();

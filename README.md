@@ -11,3 +11,6 @@ Crie um restaurante virtual com as especificações:
 - Crie dois ambientes de transição de telas de modo que:
 - No primeiro ambiente, seja mostrado uma tela principal com um botão para a tela secundária e da tela secundária um botão para voltar a tela principal.
 - No segundo ambiente, vários botões na tela principal, onde cada botão inicie uma tela diferente, sendo que cada tela contenha apenas uma imagem e um botão sair (a tela principal não pode ser fechada).
+
+
+![](demonstração.gif)

@@ -7,17 +7,19 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class TelaPedidoView extends Application {
+public class TelaSelecaoView extends Application {
     private static Stage stage;
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/pucgo/poobd/aula06052025/telas/cliente/tela-pedido.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/pucgo/poobd/aula06052025/telas/tela-selecao.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         stage.setTitle("VIRTORANTE");
         stage.setScene(scene);
         setStage(stage);
         stage.show();
+
+        TelaSelecaoView.setStage(stage); // stage para ser reutilizado em no restante do programa
     }
 
     public static Stage getStage() {
@@ -25,6 +27,6 @@ public class TelaPedidoView extends Application {
     }
 
     public static void setStage(Stage stage) {
-        TelaPedidoView.stage = stage;
+        TelaSelecaoView.stage = stage;
     }
 }

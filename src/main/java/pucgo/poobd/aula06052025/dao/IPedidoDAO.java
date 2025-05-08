@@ -12,4 +12,5 @@ public interface IPedidoDAO {
     void excluirPorID(int id);
     Optional<Pedido> buscarPorID(int id);
     List<Pedido> buscarTodos();
+    void alterarStatusPorID(int idPedidoSelecionado, boolean b);
 }

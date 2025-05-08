@@ -1,19 +1,20 @@
 package pucgo.poobd.aula06052025.dao;
 
+import pucgo.poobd.aula06052025.database.InicializadorBanco;
 import pucgo.poobd.aula06052025.model.ItemPedido;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 public class ItemPedidoDAO implements IItemPedidoDAO {
     private final Connection conexao;
+    private IProdutoDAO produtoDAO;
 
     public ItemPedidoDAO(Connection conexao) {
         this.conexao = conexao;
+        this.produtoDAO = InicializadorBanco.getProdutoDAO();
     }
 
     @Override
@@ -40,6 +41,7 @@ public class ItemPedidoDAO implements IItemPedidoDAO {
             ps.setInt(1, itemPedido.getPedido());
             ps.setInt(2, itemPedido.getProduto().getId());
             ps.setInt(3, itemPedido.getQuantidade());
+            ps.execute();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -63,5 +65,26 @@ public class ItemPedidoDAO implements IItemPedidoDAO {
     @Override
     public List<ItemPedido> buscarTodos() {
         return List.of();
+    }
+
+    @Override
+    public List<ItemPedido> buscarPorIDPedido(int idPedido) {
+        String sql = "SELECT * FROM itens_pedido WHERE pedido = ?";
+        List<ItemPedido> itens = new ArrayList<>();
+        try (PreparedStatement ps = conexao.prepareStatement(sql)) {
+            ps.setInt(1, idPedido);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                ItemPedido itemPedido = new ItemPedido();
+                itemPedido.setId(rs.getInt("id"));
+                itemPedido.setPedido(rs.getInt("pedido"));
+                itemPedido.setProduto(produtoDAO.buscarPorID(rs.getInt("produto")).orElse(null));
+                itemPedido.setQuantidade(rs.getInt("quantidade"));
+                itens.add(itemPedido);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return itens;
     }
 }

@@ -1,20 +1,19 @@
 package pucgo.poobd.aula06052025.model;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Produto {
     private int id;
     private String nome;
     private float valor;
+    private int estoque;
 
     public Produto() {
     }
 
-    public Produto(int id, String nome, float valor) {
+    public Produto(int id, String nome, float valor, int estoque) {
         this.id = id;
         this.nome = nome;
         this.valor = valor;
+        this.estoque = estoque;
     }
 
     public int getId() {
@@ -41,8 +40,16 @@ public class Produto {
         this.valor = valor;
     }
 
+    public int getEstoque() {
+        return estoque;
+    }
+
+    public void setEstoque(int estoque) {
+        this.estoque = estoque;
+    }
+
     @Override
     public String toString() {
-        return "ID: " + id + " | Nome: " + nome + " | Valor: R$" + valor;
+        return "ID: " + id + " | Nome: " + nome + " | Valor: R$ %.2f".formatted(valor);
     }
 }
