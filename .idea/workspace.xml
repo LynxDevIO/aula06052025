@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a958771b-5b65-485b-812c-9fa8e3e21bf3" name="Changes" comment="- design de novas telas&#10;- implementação de novas funcionalidades&#10;&#10;obs: um problema a ser considerado é o registro de vários pedidos que solicitam uma quantidade que ultrapassa o estoque; seria ótimo incluir uma checagem de estoque, ou seja, ao invés de a quantidade em estoque for baixada quando o pedido é baixado, ela é ajustada já na criação do pedido.">
-      <change afterPath="$PROJECT_DIR$/demonstração.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a958771b-5b65-485b-812c-9fa8e3e21bf3" name="Changes" comment="demonstracao">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demonstração.gif" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +127,7 @@
       <workItem from="1746666913776" duration="215000" />
       <workItem from="1746667219308" duration="317000" />
       <workItem from="1746667917853" duration="41000" />
-      <workItem from="1746668039231" duration="216000" />
+      <workItem from="1746668039231" duration="265000" />
     </task>
     <task id="LOCAL-00001" summary="- inclusão e configuração da persistência dos dados com sqlite&#10;- implementação da lógica restante do controlador de TelaPedidoController.java&#10;- outras adaptações necessárias para atender à implementação">
       <option name="closed" value="true" />
@@ -148,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746666771041</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="demonstracao">
+      <option name="closed" value="true" />
+      <created>1746668277715</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746668277715</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +173,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- inclusão e configuração da persistência dos dados com sqlite&#10;- implementação da lógica restante do controlador de TelaPedidoController.java&#10;- outras adaptações necessárias para atender à implementação" />
     <MESSAGE value="- design de novas telas&#10;- implementação de novas funcionalidades&#10;&#10;obs: um problema a ser considerado é o registro de vários pedidos que solicitam uma quantidade que ultrapassa o estoque; seria ótimo incluir uma checagem de estoque, ou seja, ao invés de a quantidade em estoque for baixada quando o pedido é baixado, ela é ajustada já na criação do pedido." />
-    <option name="LAST_COMMIT_MESSAGE" value="- design de novas telas&#10;- implementação de novas funcionalidades&#10;&#10;obs: um problema a ser considerado é o registro de vários pedidos que solicitam uma quantidade que ultrapassa o estoque; seria ótimo incluir uma checagem de estoque, ou seja, ao invés de a quantidade em estoque for baixada quando o pedido é baixado, ela é ajustada já na criação do pedido." />
+    <MESSAGE value="demonstracao" />
+    <option name="LAST_COMMIT_MESSAGE" value="demonstracao" />
   </component>
 </project>
