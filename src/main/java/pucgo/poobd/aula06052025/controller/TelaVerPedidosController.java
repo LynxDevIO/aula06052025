@@ -88,20 +88,11 @@ public class TelaVerPedidosController {
             });
 
             mi1.setOnAction(_ -> {
-                // ação baixar pedido, o que inclui reduzir a quantidade do produto no estoque
+                // ação baixar pedido
                 Pedido pedidoSelecionado = tabelaPedidos.getSelectionModel().getSelectedItem(); // pega o pedido, pois precisa do ID, mas ele não vem com os ITENS, pois o banco de dados não guarda os itens na tabela pedidos
 
                 if (pedidoSelecionado != null) {
                     int idPedidoSelecionado = pedidoSelecionado.getId();
-
-                    // obter os itens do pedido para poder dar baixa no estoque de cada produto
-                    itemPedidoDAO.buscarPorIDPedido(idPedidoSelecionado).forEach(
-                            itemPedido -> {
-                                int idProduto = itemPedido.getProduto().getId();
-                                int estoque = itemPedido.getProduto().getEstoque() - itemPedido.getQuantidade();
-                                produtoDao.alterarEstoquePorID(idProduto, estoque);
-                            }
-                    );
 
                     // alterar o status do pedido e atualizar a tabela
                     pedidoDAO.alterarStatusPorID(idPedidoSelecionado, false);
@@ -139,6 +130,17 @@ public class TelaVerPedidosController {
             tabelaPedidos.getColumns().add(colObservacao);
         }
     }
+    @FXML
+    private void botaoVoltarOA() {
+        TelaPrincipalOperadorView telaPrincipalOperadorView = new TelaPrincipalOperadorView();
+        try {
+            telaPrincipalOperadorView.start(TelaVerPedidosView.getStage());
+            TelaPrincipalOperadorView.getStage().centerOnScreen();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
     private void mostrarItensDoPedido(Pedido pedidoSelecionado) {
         List<ItemPedido> itens = itemPedidoDAO.buscarPorIDPedido(pedidoSelecionado.getId());
@@ -146,17 +148,6 @@ public class TelaVerPedidosController {
         try {
             popup.setItens(itens);
             popup.start(new Stage());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    @FXML
-    private void botaoVoltarOA() {
-        TelaPrincipalOperadorView telaPrincipalOperadorView = new TelaPrincipalOperadorView();
-        try {
-            telaPrincipalOperadorView.start(TelaVerPedidosView.getStage());
-            TelaPrincipalOperadorView.getStage().centerOnScreen();
         } catch (Exception e) {
             e.printStackTrace();
         }

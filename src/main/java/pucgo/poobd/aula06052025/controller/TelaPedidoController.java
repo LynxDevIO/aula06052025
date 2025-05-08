@@ -144,8 +144,11 @@ public class TelaPedidoController {
             // inserir o pedido
             int idPedido = pedidoDAO.inserir(pedido);
 
-            // inserir itens do pedido
+            // dar baixa no estoque de cada produto & inserir os itens do pedido no banco de dados
             pedido.getItens().forEach(item -> {
+                int estoque = item.getProduto().getEstoque() - item.getQuantidade();
+                produtoDAO.alterarEstoquePorID(item.getProduto().getId(), estoque);
+
                 item.setPedido(idPedido);
                 itensPedidoDAO.inserir(item);
             });
