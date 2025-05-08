@@ -6,14 +6,16 @@ import javax.swing.*;
 
 public final class Alerta {
     public static void confirmacao(String conteudo) {
-        Alert a =  new Alert(Alert.AlertType.CONFIRMATION);
+        Alert a = new Alert(Alert.AlertType.CONFIRMATION);
+        a.setTitle("Confirmação");
         a.setHeaderText(null);
         a.setContentText(conteudo);
         a.showAndWait();
     }
 
     public static void erro(String conteudo) {
-        Alert a =  new Alert(Alert.AlertType.ERROR);
+        Alert a = new Alert(Alert.AlertType.ERROR);
+        a.setTitle("Erro");
         a.setHeaderText(null);
         a.setContentText(conteudo);
         a.showAndWait();
@@ -24,14 +26,16 @@ public final class Alerta {
     }
 
     public static void informacao(String conteudo) {
-        Alert a =  new Alert(Alert.AlertType.INFORMATION);
+        Alert a = new Alert(Alert.AlertType.INFORMATION);
+        a.setTitle("Informação");
         a.setHeaderText(null);
         a.setContentText(conteudo);
         a.showAndWait();
     }
 
-    public static void aviso(String conteudo) {
-        Alert a =  new Alert(Alert.AlertType.WARNING);
+    public static void atencao(String conteudo) {
+        Alert a = new Alert(Alert.AlertType.WARNING);
+        a.setTitle("Atenção");
         a.setHeaderText(null);
         a.setContentText(conteudo);
         a.showAndWait();

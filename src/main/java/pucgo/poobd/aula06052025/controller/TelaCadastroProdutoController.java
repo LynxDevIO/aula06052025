@@ -65,7 +65,7 @@ public class TelaCadastroProdutoController {
 
             Alerta.informacao("Produto cadastrado com sucesso!");
         } else {
-            Alerta.aviso("Todos os campos devem ser preenchidos!");
+            Alerta.atencao("Todos os campos devem ser preenchidos!");
         }
     }
 

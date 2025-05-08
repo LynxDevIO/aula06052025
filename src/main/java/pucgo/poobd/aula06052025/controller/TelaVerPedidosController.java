@@ -53,10 +53,10 @@ public class TelaVerPedidosController {
 
         if (pedidos.isEmpty()) {
             tabelaPedidos.setDisable(true);
-            Alerta.aviso("Nenhum pedido encontrado!");
+            Alerta.atencao("Nenhum pedido encontrado!");
         } else if (pedidos.stream().noneMatch(Pedido::getStatus)) {
             tabelaPedidos.setDisable(true);
-            Alerta.aviso("Nenhum pedido ativo!");
+            Alerta.atencao("Nenhum pedido ativo!");
         } else {
             pedidos = pedidos.stream().filter(Pedido::getStatus).collect(Collectors.toList());
 

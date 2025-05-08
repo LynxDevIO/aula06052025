@@ -13,7 +13,6 @@ import pucgo.poobd.aula06052025.model.Produto;
 import pucgo.poobd.aula06052025.util.Alerta;
 import pucgo.poobd.aula06052025.view.TelaPedidoView;
 import pucgo.poobd.aula06052025.view.TelaPrincipalClienteView;
-import pucgo.poobd.aula06052025.view.TelaPrincipalOperadorView;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -75,7 +74,7 @@ public class TelaPedidoController {
             hboxObs.setDisable(true);
             pedidoConfirmado.setDisable(true);
 
-            Alerta.aviso("Nenhum produto encontrado.");
+            Alerta.atencao("Nenhum produto encontrado.");
         } else {
             produtos = produtos.stream().filter(p -> p.getEstoque() > 0).collect(Collectors.toList());
             if (produtos.isEmpty()) { // somente produtos com estoque positivo!
@@ -83,7 +82,7 @@ public class TelaPedidoController {
                 hboxObs.setDisable(true);
                 pedidoConfirmado.setDisable(true);
 
-                Alerta.aviso("Nenhum produto com estoque positivo.");
+                Alerta.atencao("Nenhum produto com estoque positivo.");
             } else {
                 // popula o comboBox "escolherItem" com a lista de todos os produtos
                 // e mostra o primeiro item da lista
@@ -153,7 +152,7 @@ public class TelaPedidoController {
                 itensPedidoDAO.inserir(item);
             });
 
-            Alerta.aviso("Pedido enviado com sucesso");
+            Alerta.informacao("Pedido enviado com sucesso");
 
             // reorganizar a interface após envio
             listaPedido.getItems().clear();
@@ -163,7 +162,7 @@ public class TelaPedidoController {
             pedidoConfirmado.setSelected(false);
             botaoEnviarPedido.setDisable(true);
         } else {
-            Alerta.aviso("Lista de itens vazia!");
+            Alerta.atencao("Lista de itens vazia!");
         }
     }
 
@@ -188,7 +187,7 @@ public class TelaPedidoController {
                 listaPedido.getItems().remove(itemSelecionado);
                 atualizarValorTotalDoPedido();
             } else {
-                Alerta.aviso("Nenhum item selecionado.");
+                Alerta.atencao("Nenhum item selecionado.");
             }
         });
 
