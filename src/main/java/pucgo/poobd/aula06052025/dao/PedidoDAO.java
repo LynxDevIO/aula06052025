@@ -19,7 +19,7 @@ public class PedidoDAO implements IPedidoDAO {
     @Override
     public void criarTabela() {
         String sql = "CREATE TABLE IF NOT EXISTS pedidos (" +
-                "id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY," +
                 "valor NUMERIC CHECK (valor = ROUND(valor, 2))," +
                 "observacao TEXT, " +
                 "data DATE NOT NULL, " +

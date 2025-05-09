@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a958771b-5b65-485b-812c-9fa8e3e21bf3" name="Changes" comment="- atualização da lógica de baixar estoque dos produtos já no ato da criação do pedido&#10;- atualização do GIF de demonstração do programa para refletir a temática de restaurante&#10;- inclusão de uma imagem na tela inicial do programa">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaCadastroProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaCadastroProdutoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaPedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaPedidoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaVerPedidosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/controller/TelaVerPedidosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/util/Alerta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/util/Alerta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/ItemPedidoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/ItemPedidoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/PedidoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/PedidoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/ProdutoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/dao/ProdutoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/database/ConexaoBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pucgo/poobd/aula06052025/database/ConexaoBanco.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +55,7 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2wjvuP5HrVDDoDSYX7hiOugDIIA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

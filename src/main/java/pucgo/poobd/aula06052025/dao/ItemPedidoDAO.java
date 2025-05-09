@@ -20,7 +20,7 @@ public class ItemPedidoDAO implements IItemPedidoDAO {
     @Override
     public void criarTabela() {
         String sql = "CREATE TABLE IF NOT EXISTS itens_pedido (" +
-                "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, " +
                 "pedido INTEGER NOT NULL, " +
                 "produto INTEGER NOT NULL, " +
                 "quantidade INTEGER NOT NULL, " +

@@ -15,7 +15,7 @@ public class ConexaoBanco {
 
     private static Connection buscarConexao() {
         try {
-            conexao = DriverManager.getConnection("jdbc:sqlite:database.db");
+            conexao = DriverManager.getConnection("jdbc:postgresql://localhost/restaurante", "postgres", "postgres");
         } catch (SQLException e) {
             System.err.println("Erro ao conectar com o banco de dados! Mensagem: " + e.getMessage());
             Alerta.erro("Erro ao conectar com o banco de dados! Verificar log do sistema.");

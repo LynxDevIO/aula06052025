@@ -19,10 +19,10 @@ public class ProdutoDAO implements IProdutoDAO {
     @Override
     public void criarTabela() {
         String sql = "CREATE TABLE IF NOT EXISTS produtos (" +
-                "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, " +
                 "nome TEXT NOT NULL, " +
                 "valor NUMERIC NOT NULL CHECK (valor = ROUND(valor, 2)), " +
-                "estoque INTEGER NOT NULL DEFAULT 0" +
+                "estoque INT NOT NULL DEFAULT 0" +
                 ")";
         try (Statement st = conexao.createStatement()){
             st.execute(sql);
